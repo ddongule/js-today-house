@@ -3,6 +3,12 @@ const numberFormat = (inputNumber) => {
 };
 
 const prices = document.getElementsByClassName('price');
+const reviewCounts = document.getElementsByClassName('review-count');
+
 for (const price of prices) {
   price.innerText = numberFormat(price.innerText);
+}
+
+for (const count of reviewCounts) {
+  count.innerText = numberFormat(count.innerText);
 }
