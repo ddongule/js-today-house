@@ -92,6 +92,7 @@ button::-moz-focus-inner {
 
 nav.layout-navigation {
   width: 100%;
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav.layout-navigation .navigation {
