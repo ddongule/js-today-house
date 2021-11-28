@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global-colors.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/write.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;700;900&display=swap"
+      rel="stylesheet"
+      preload
+    />
+    <title>200개의 식물과 사는, 가드너의 빈티지 무드 하우스</title>
+  </head>
+
+  <body>
+    <nav class="layout-navigation">
+      <div class="navigation">
+        <svg class="icon" width="24" height="24" preserveAspectRatio="xMidYMid meet">
+          <path
+            d="M3.7 12.5h18.8v-1H3.7l7.8-7.8-.7-.7L2 11.7l.3.3-.3.3 8.8 8.7.7-.7-7.8-7.8z"
+            fill="#000"
+            fill-opacity=".7"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+
+        <div class="mobile-nav">글쓰기</div>
+
+        <button class="post">발행</button>
+      </div>
+    </nav>
+
+    <section class="post-container">
+      <div class="cover-image-wrapper">
+        <div class="info-wrapper">
+          <span class="info-title">커버 사진을 업로드해주세요.</span>
+          <span class="info-content">* 권장 사이즈: 1920 x 1080, 최소 1400 x 930 (3:2 비율)</span>
+        </div>
+        <div class="file-upload-wrapper">
+          <label for="cover-image">커버 사진 추가하기</label>
+          <input type="file" class="file-upload" id="cover-image" />
+        </div>
+      </div>
+
+      <div class="title-wrapper">
+        <input placeholder="제목을 입력해주세요." required />
+        <span class="word-count">
+          <span class="current-count">10</span> / <span class="max-count">30</span>
+        </span>
+      </div>
+
+      <textarea placeholder="내용을 입력해주세요."></textarea>
+    </section>
+  </body>
+</html>
