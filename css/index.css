@@ -231,7 +231,7 @@ nav.layout-navigation {
   position: fixed;
   width: 250px;
   height: 100%;
-  background-color: var(--today-house);
+  background-color: white;
   top: 0;
   left: 0;
   z-index: 100;
@@ -241,10 +241,16 @@ nav.layout-navigation {
 }
 
 .side-bar a {
-  color: white;
+  color: #1d1d1f;
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 75px;
+
+  transition: color 0.5s;
+}
+
+.side-bar a:hover {
+  color: var(--today-house);
 }
 
 .side-bar.open {
