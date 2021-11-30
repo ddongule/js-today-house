@@ -23,7 +23,9 @@
 ## How To Start?
 
 1. 이 레포지토리를 Clone 받으세요.
-2. Live Server를 실행하세요.
+2. npm install 을 통해 필요한 패키지를 다운받으세요
+3. npm run serve 를 통해 api 서버를 동작시키세요
+4. Live Server를 실행하세요.
 
 ## Bug
 
