@@ -11,13 +11,13 @@
       rel="stylesheet"
       preload
     />
-    <title>인테리어 특가 쇼핑 | 오늘의 집</title>
+    <title>오늘의 집</title>
   </head>
 
   <body>
     <nav class="layout-navigation">
       <div class="navigation">
-        <div class="mobile-nav">
+        <div class="side-bar-toggle">
           <svg
             class="icon"
             width="24"
@@ -25,7 +25,10 @@
             viewBox="0 0 24 24"
             preserveAspectRatio="xMidYMid meet"
           >
-            <path fill="#35c5f0" d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+            <path
+              fill="#35c5f0"
+              d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"
+            ></path>
           </svg>
         </div>
         <div class="logo">
@@ -59,7 +62,7 @@
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            stroke="#757575"
+            stroke="transparent"
             fill="none"
             stroke-linejoin="round"
             stroke-width="2"
@@ -98,182 +101,68 @@
       </div>
     </section>
 
-    <section class="today-deal-container">
-      <div class="today-deal-header">
-        <h1 class="title">오늘의딜</h1>
-        <button class="more">더보기</button>
+    <section class="today-house-container">
+      <div class="today-house-header">
+        <h1 class="title">오늘의 스토리</h1>
+        <a class="more" href="/posts.html">더보기</a>
       </div>
-      <div class="today-deal-item-wrapper">
-        <a href="#" class="today-deal-item">
-          <div class="today-deal-item-image">
-            <img
-              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/163789288686459154.jpg?gif=1&w=720&h=720&c=c&q=0.8"
-              alt="칫솔"
-            />
-          </div>
-          <div class="today-deal-item-header">
-            <span class="today-deal-item-content__brand">켄트</span>
-            <span class="today-deal-item-content__title">
-              [최종가 19900원] 재구매율 1위! 영국 명품 초극세모 치과 켄트칫솔 (6개입+6개입)
-            </span>
-
-            <div class="item-status">
-              <span class="star">4.7</span>
-              <span class="review">리뷰 <span class="review-count">968</span></span>
-            </div>
-
-            <div class="item-price">
-              <span class="discount">30</span>
-              <span class="price">35900</span>
-            </div>
-          </div>
-        </a>
+      <div class="today-house-item-wrapper">
+        <div class="today-house-item">
+          <img
+            class="today-house-item-image"
+            src="./images/house1.jpg"
+            alt="오늘의 집들이 사진"
+          />
+          <h2>여행에서 영감받아 완성! 디자이너의 따뜻한 모던 하우스</h2>
+        </div>
+        <div class="today-house-item">
+          <img
+            class="today-house-item-image"
+            src="./images/house2.jpg"
+            alt="오늘의 집들이 사진"
+          />
+          <h2>24년 구축 아파트, 도화지 같은 집으로 리모델링하기</h2>
+        </div>
+        <div class="today-house-item">
+          <img
+            class="today-house-item-image"
+            src="./images/house3.jpg"
+            alt="오늘의 집들이 사진"
+          />
+          <h2>첫 독립이니까, 엔틱&프렌치 감성으로 채운 1.5룸</h2>
+        </div>
+        <div class="today-house-item">
+          <img
+            class="today-house-item-image"
+            src="./images/house4.jpg"
+            alt="오늘의 집들이 사진"
+          />
+          <h2>화사한 화이트톤 아파트에, 설레는 그린 트리🎄</h2>
+        </div>
+        <div class="today-house-item">
+          <img
+            class="today-house-item-image"
+            src="./images/house5.jpg"
+            alt="오늘의 집들이 사진"
+          />
+          <h2>소품 수집 만렙의 알록달록한, 취향과 감성의 공간</h2>
+        </div>
+        <div class="today-house-item">
+          <img
+            class="today-house-item-image"
+            src="./images/house6.jpg"
+            alt="오늘의 집들이 사진"
+          />
+          <h2>스타일링으로 따뜻한 신혼집이 된 오래된 아파트</h2>
+        </div>
       </div>
-
-      <div class="today-deal-item-wrapper">
-        <a href="#" class="today-deal-item">
-          <div class="today-deal-item-image">
-            <img
-              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/161758914987437518.jpg?gif=1&w=720&h=720&c=c&q=0.8"
-              alt="미니 건조기"
-            />
-          </div>
-          <div class="today-deal-item-header">
-            <span class="today-deal-item-content__brand">미닉스</span>
-            <span class="today-deal-item-content__title">
-              [단독] 4차완판! 리뷰입증 미닉스 미니 건조기 3kg
-            </span>
-
-            <div class="item-status">
-              <span class="star">4.8</span>
-              <span class="review">리뷰 <span class="review-count">2828</span></span>
-            </div>
-
-            <div class="item-price">
-              <span class="discount">40</span>
-              <span class="price">279000</span>
-            </div>
-
-            <div class="badge free-shipping">무료배송</div>
-            <div class="badge cross-border-shipping">해외직구</div>
-          </div>
-        </a>
+      <div class="side-bar">
+        <a href="/index.html">HOME</a>
+        <a href="/posts.html">집들이</a>
+        <a href="/write.html">글작성</a>
       </div>
-
-      <div class="today-deal-item-wrapper">
-        <a href="#" class="today-deal-item">
-          <div class="today-deal-item-image">
-            <img
-              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/160405524122572244.jpg?gif=1&w=720&h=720&c=c&q=0.8"
-              alt="이불"
-            />
-          </div>
-          <div class="today-deal-item-header">
-            <span class="today-deal-item-content__brand">베이직톤</span>
-            <span class="today-deal-item-content__title">
-              [5%쿠폰] 노스베어 프리미엄 10mm 라셀 극세사차렵이불 SS/Q/K/LK 4colors
-            </span>
-
-            <div class="item-status">
-              <span class="star">4.7</span>
-              <span class="review">리뷰 <span class="review-count">2793</span></span>
-            </div>
-
-            <div class="item-price">
-              <span class="discount">67</span>
-              <span class="price">59900</span>
-            </div>
-
-            <div class="badge free-shipping">무료배송</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="today-deal-item-wrapper">
-        <a href="#" class="today-deal-item">
-          <div class="today-deal-item-image">
-            <img
-              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/162303132447303472.jpeg?gif=1&w=720&h=720&c=c&q=0.8"
-              alt="커튼"
-            />
-          </div>
-          <div class="today-deal-item-header">
-            <span class="today-deal-item-content__brand">미닉스</span>
-            <span class="today-deal-item-content__title">
-              [5%쿠폰][맞춤] 비침없는 화이트 도톰 레이스/쉬폰커튼(나비주름/핀형/봉집)
-            </span>
-
-            <div class="item-status">
-              <span class="star">4.6</span>
-              <span class="review">리뷰 <span class="review-count">7484</span></span>
-            </div>
-
-            <div class="item-price">
-              <span class="discount">55</span>
-              <span class="price">19900</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="today-deal-item-wrapper">
-        <a href="#" class="today-deal-item">
-          <div class="today-deal-item-image">
-            <img
-              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/160430436876683133.jpg?gif=1&w=720&h=720&c=c&q=0.8"
-              alt="체어"
-            />
-          </div>
-          <div class="today-deal-item-header">
-            <span class="today-deal-item-content__brand">영가구</span>
-            <span class="today-deal-item-content__title"> 디자인 인테리어체어 3종 선택 </span>
-
-            <div class="item-status">
-              <span class="star">4.5</span>
-              <span class="review">리뷰 <span class="review-count">14891</span></span>
-            </div>
-
-            <div class="item-price">
-              <span class="discount">84</span>
-              <span class="price">37900</span>
-            </div>
-
-            <div class="badge free-shipping">무료배송</div>
-            <div class="badge cross-border-shipping">해외직구</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="today-deal-item-wrapper">
-        <a href="#" class="today-deal-item">
-          <div class="today-deal-item-image">
-            <img
-              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/163721873122012272.jpg?gif=1&w=720&h=720&c=c&q=0.8"
-              alt="쿠쿠"
-            />
-          </div>
-          <div class="today-deal-item-header">
-            <span class="today-deal-item-content__brand">쿠쿠</span>
-            <span class="today-deal-item-content__title">
-              [최종가 229,000] 쿠쿠 CRP-ST1010FW 10인용 트윈프레셔 전기압력밥솥
-            </span>
-
-            <div class="item-status">
-              <span class="star">4.8</span>
-              <span class="review">리뷰 <span class="review-count">291</span></span>
-            </div>
-
-            <div class="item-price">
-              <span class="discount">30</span>
-              <span class="price">243100</span>
-            </div>
-
-            <div class="badge free-shipping">무료배송</div>
-          </div>
-        </a>
-      </div>
+      <div class="back-drop"></div>
     </section>
-    <section></section>
-    <script src="./src/index.js"></script>
+    <script src="./src/index.js" type="module"></script>
   </body>
 </html>
