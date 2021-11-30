@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global-colors.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/posting.css" />
+    <link rel="stylesheet" href="./css/posts.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;700;900&display=swap"
       rel="stylesheet"
       preload
     />
-    <title>200개의 식물과 사는, 가드너의 빈티지 무드 하우스</title>
+    <title>오늘의 집</title>
   </head>
 
   <body>
     <nav class="layout-navigation">
       <div class="navigation">
-        <div class="mobile-nav">
+        <div class="side-bar-toggle">
           <svg
             class="icon"
             width="24"
@@ -26,7 +26,10 @@
             viewBox="0 0 24 24"
             preserveAspectRatio="xMidYMid meet"
           >
-            <path fill="#35c5f0" d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+            <path
+              fill="#35c5f0"
+              d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"
+            ></path>
           </svg>
         </div>
 
@@ -62,7 +65,7 @@
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            stroke="#757575"
+            stroke="transparent"
             fill="none"
             stroke-linejoin="round"
             stroke-width="2"
@@ -79,8 +82,6 @@
     </nav>
 
     <section class="posting-container">
-      <section class="category">전체 <span>2,134</span></section>
-
       <div class="posting-wrapper">
         <div class="posting-image-container">
           <img
@@ -93,16 +94,12 @@
         <div class="profile-wrapper">
           <div class="profile-image-container">
             <img
+              class="profile-image"
               src="https://image.ohou.se/i/bucketplace-v2-development/uploads/users/profile_images/162090803586611477.png?gif=1&w=72&h=72&c=c"
               alt="profile-image"
             />
           </div>
           <span class="profile-nickname">kate 홈스타일링</span>
-        </div>
-
-        <div class="details">
-          <span class="scrap">스크랩 18</span>
-          <span class="lookup">조회 1,364</span>
         </div>
       </div>
 
@@ -124,11 +121,6 @@
           </div>
           <span class="profile-nickname">벨류인테리어디자인</span>
         </div>
-
-        <div class="details">
-          <span class="scrap">스크랩 17</span>
-          <span class="lookup">조회 948</span>
-        </div>
       </div>
 
       <div class="posting-wrapper">
@@ -148,11 +140,6 @@
             />
           </div>
           <span class="profile-nickname">(주)제이디자인</span>
-        </div>
-
-        <div class="details">
-          <span class="scrap">스크랩 27</span>
-          <span class="lookup">조회 1,527</span>
         </div>
       </div>
 
@@ -174,11 +161,6 @@
           </div>
           <span class="profile-nickname">유마디자인</span>
         </div>
-
-        <div class="details">
-          <span class="scrap">스크랩 16</span>
-          <span class="lookup">조회 1,551</span>
-        </div>
       </div>
 
       <div class="posting-wrapper">
@@ -198,11 +180,6 @@
             />
           </div>
           <span class="profile-nickname">(주)어썸인테리어앤디자인</span>
-        </div>
-
-        <div class="details">
-          <span class="scrap">스크랩 56</span>
-          <span class="lookup">조회 5,454</span>
         </div>
       </div>
 
@@ -224,11 +201,6 @@
           </div>
           <span class="profile-nickname">수디자인</span>
         </div>
-
-        <div class="details">
-          <span class="scrap">스크랩 30</span>
-          <span class="lookup">조회 1,732</span>
-        </div>
       </div>
 
       <div class="posting-wrapper">
@@ -249,11 +221,6 @@
           </div>
           <span class="profile-nickname">코이디자인</span>
         </div>
-
-        <div class="details">
-          <span class="scrap">스크랩 225</span>
-          <span class="lookup">조회 9,377</span>
-        </div>
       </div>
     </section>
 
@@ -267,7 +234,13 @@
           preserveAspectRatio="xMidYMid meet"
         >
           <g fill="none" fill-rule="evenodd">
-            <circle cx="22.5" cy="22.5" r="22.5" fill="#FEFFFE" fill-opacity="90%"></circle>
+            <circle
+              cx="22.5"
+              cy="22.5"
+              r="22.5"
+              fill="#FEFFFE"
+              fill-opacity="90%"
+            ></circle>
             <path d="M12.5 12.5h20v20h-20z"></path>
             <path
               stroke="#000"
@@ -280,5 +253,13 @@
         </svg>
       </button>
     </section>
+    <div class="side-bar">
+      <a href="/index.html">HOME</a>
+      <a href="/posts.html">집들이</a>
+      <a href="/write.html">글작성</a>
+    </div>
+    <div class="back-drop"></div>
+    <script src="./src/index.js" type="module"></script>
+    <script src="./src/posts.js" type="module"></script>
   </body>
 </html>

@@ -9,19 +9,25 @@
   font-weight: 700;
 }
 
-.layout-navigation .navigation .post {
+.layout-navigation .navigation .publish-button {
   color: var(--today-house);
   font-weight: 700;
 }
 
-.post-container .title-wrapper {
+.post-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.post-form .title-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.post-container input {
+.post-form input {
   all: unset;
   width: 100%;
   padding: 1rem;
@@ -30,30 +36,38 @@
   line-height: 22px;
 }
 
-.post-container input::placeholder,
-.post-container textarea::placeholder {
+.post-form input::placeholder,
+.post-form textarea::placeholder {
   font-weight: 400;
   color: var(--post-border);
 }
 
-.post-container textarea {
-  all: unset;
+.post-form textarea {
   width: 100%;
-  padding: 10px 15px;
+  height: 100%;
+  font-size: 14px;
+  padding: 12px 15px;
+  border: none;
 }
 
-.post-container .title-wrapper .word-count {
+.post-form textarea:focus {
+  outline-color: var(--today-house);
+}
+
+
+.post-form .title-wrapper .word-count {
   width: 80px;
   font-size: 13px;
   user-select: none;
   color: var(--write-title);
 }
 
-.post-container .title-wrapper .word-count span {
+.post-form .title-wrapper .word-count span {
   color: inherit;
 }
 
-.post-container .cover-image-wrapper {
+.post-form .cover-image-wrapper {
+  position: relative;
   width: 100%;
   height: 250px;
   display: flex;
@@ -63,31 +77,41 @@
   background-color: #f7f8fa;
 }
 
-.post-container .cover-image-wrapper input[type='file'] {
+.post-form .cover-image {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post-form .cover-image-wrapper input[type='file'] {
   all: unset;
 }
 
-.post-container .cover-image-wrapper .info-wrapper {
+.post-form .cover-image-wrapper .info-wrapper {
   text-align: center;
 }
 
-.post-container .cover-image-wrapper .info-wrapper span {
+.post-form .cover-image-wrapper .info-wrapper span {
   display: block;
   margin-bottom: 15px;
   color: var(--write-title);
 }
-.post-container .cover-image-wrapper .info-wrapper .info-title {
+.post-form .cover-image-wrapper .info-wrapper .info-title {
   font-size: 15px;
   font-weight: 400;
 }
 
-.post-container .cover-image-wrapper .info-wrapper .info-content {
+.post-form .cover-image-wrapper .info-wrapper .info-content {
   margin: 6px 0 0;
   font-size: 13px;
   font-weight: 700;
 }
 
-.post-container .cover-image-wrapper .file-upload-wrapper label {
+.file-upload-wrapper label, .file-re-upload-wrapper label {
   padding: 1rem;
   display: inline-block;
   margin: 17px 0 0;
@@ -101,6 +125,14 @@
   cursor: pointer;
 }
 
-.post-container .cover-image-wrapper .file-upload-wrapper .file-upload {
+.file-re-upload-wrapper {
   display: none;
+  position: absolute;
+  z-index: 3;
+  bottom: 12px;
+  right: 12px;
+}
+
+.go-back {
+  cursor: pointer;
 }

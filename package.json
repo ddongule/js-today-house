@@ -1,0 +1,14 @@
+{
+  "name": "js-today-house",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ddongule/js-today-house",
+  "author": "swon3210 <swon3210@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "json-server --watch ./db.json --port 1234"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}

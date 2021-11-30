@@ -1,14 +1,15 @@
-const numberFormat = (inputNumber) => {
-  return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-};
+import "./utils/number-format.js";
 
-const prices = document.getElementsByClassName('price');
-const reviewCounts = document.getElementsByClassName('review-count');
+const $sidebarToggle = document.querySelector(".side-bar-toggle");
+const $sidebar = document.querySelector(".side-bar");
+const $backDrop = document.querySelector(".back-drop");
 
-for (const price of prices) {
-  price.innerText = numberFormat(price.innerText);
-}
+$sidebarToggle.addEventListener("click", () => {
+  $sidebar.classList.toggle("open");
+  $backDrop.style.display = "block";
+});
 
-for (const count of reviewCounts) {
-  count.innerText = numberFormat(count.innerText);
-}
+$backDrop.addEventListener("click", () => {
+  $sidebar.classList.toggle("open");
+  $backDrop.style.display = "none";
+});
